@@ -1,0 +1,19 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+local window  = Library.CreateLib("Name", "RJTheme3")
+
+local Tab = window:NewTab("Main")
+
+local Section = Tab:NewSection("aboba")
+
+Section:NewButton("Антиафк", "ебу маму рататуя", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/luca5432/Roblox-ANTI-AFK-SCRIPT/main/Script"))()
+end)
+Section:NewSlider("Скорость", "ебу маму рататуя", 1000, 20, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+    
+end)
+Section:NewSlider("банихоп", "ебу маму рататуя", 1000, 20, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+    
+end)
